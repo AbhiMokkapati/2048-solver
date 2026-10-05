@@ -6,8 +6,7 @@ you — or plays it for you.
 
 ## Setup
 
-A virtual environment is already set up in `.venv/` with all dependencies
-installed. To recreate it from scratch:
+Create a virtual environment and install dependencies:
 
 ```powershell
 python -m venv .venv
@@ -18,8 +17,8 @@ python -m venv .venv
 
 ## Run
 
-**Desktop shortcut:** double-click **"2048 Solver"** on your Desktop — it
-launches via the venv's `pythonw.exe`, so no console window pops up.
+**Windows launcher:** double-click `launch.bat` (or make a shortcut to it) — it
+starts the app via the venv's `pythonw.exe`, so no console window pops up.
 
 **Manually:**
 
@@ -38,7 +37,7 @@ launches via the venv's `pythonw.exe`, so no console window pops up.
    turning this on — the app remembers the currently-focused window at that
    moment and refocuses it before every keystroke.
 
-Calibration is saved to `region.json` next to the script, so you don't have
+Calibration is saved to `region.json` next to the script (machine-specific, so it is git-ignored), so you don't have
 to redo it if the game window doesn't move between runs.
 
 ## How it works
